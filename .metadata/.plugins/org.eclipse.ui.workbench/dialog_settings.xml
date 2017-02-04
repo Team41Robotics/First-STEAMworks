@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="460" key="DIALOG_X_ORIGIN"/>
+		<item value="88" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="-1" key="dialogHeight"/>
 		<item value="-1" key="dialogWidth"/>
@@ -16,7 +20,6 @@
 		<item value="edu.wpi.first.wpilib.plugins.cpp.wizards.newproject.NewCPPWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="edu.wpi.first.wpilib.plugins.cpp"/>
-			<item value="org.eclipse.ui.Examples"/>
 		</list>
 	</section>
 </section>

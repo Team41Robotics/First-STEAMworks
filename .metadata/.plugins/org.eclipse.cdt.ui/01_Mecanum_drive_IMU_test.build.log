@@ -1,0 +1,40 @@
+13:01:09 **** Rebuild of configuration Debug for project 01_Mecanum_drive_IMU_test ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\01_Mecanum_drive_IMU_test\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Driving.o" "..\\src\\Driving.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\01_Mecanum_drive_IMU_test\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\01_Mecanum_drive_IMU_test\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\IMU.o" "..\\src\\IMU.cpp" 
+..\src\IMU.cpp: In member function 'double IMU::complementaryIMU(double, double, int)':
+..\src\IMU.cpp:24:9: warning: unused variable 'dtC' [-Wunused-variable]
+  double dtC = loop/1000;
+         ^
+..\src\IMU.cpp: In member function 'void IMU::Localization(frc::BuiltInAccelerometer*, frc::ADXRS450_Gyro*)':
+..\src\IMU.cpp:43:10: error: incompatible types in assignment of 'double' to 'double [2]'
+  accel_x = ( accel->GetX() * K_a0 + accel->GetX() * K_a1 ) * G;
+          ^
+..\src\IMU.cpp:45:10: error: incompatible types in assignment of 'double' to 'double [2]'
+  accel_y = ( accel->GetY() * K_a0 + accel->GetY() * K_a1 ) * G;
+          ^
+..\src\IMU.cpp:47:8: error: incompatible types in assignment of 'double' to 'double [2]'
+  theta = gyro->GetAngle() * RAD;
+        ^
+..\src\IMU.cpp:49:40: error: invalid operands of types 'double [2]' and 'double' to binary 'operator*'
+  velocity_x += ( accel_x * cos(theta[0]) + accel_y * sin(theta[0]) ) * del_t;
+                                        ^
+..\src\IMU.cpp:49:66: error: invalid operands of types 'double [2]' and 'double' to binary 'operator*'
+  velocity_x += ( accel_x * cos(theta[0]) + accel_y * sin(theta[0]) ) * del_t;
+                                                                  ^
+..\src\IMU.cpp:50:40: error: invalid operands of types 'double [2]' and 'double' to binary 'operator*'
+  velocity_y += ( accel_y * cos(theta[0]) + accel_x * sin(theta[0]) ) * del_t;
+                                        ^
+..\src\IMU.cpp:50:66: error: invalid operands of types 'double [2]' and 'double' to binary 'operator*'
+  velocity_y += ( accel_y * cos(theta[0]) + accel_x * sin(theta[0]) ) * del_t;
+                                                                  ^
+..\src\IMU.cpp:52:29: error: invalid operands of types 'double [2]' and 'double' to binary 'operator*'
+  position_x += velocity_x * del_t;//very high in accError
+                             ^
+..\src\IMU.cpp:53:29: error: invalid operands of types 'double [2]' and 'double' to binary 'operator*'
+  position_y += velocity_y * del_t;
+                             ^
+
+13:01:14 Build Finished (took 4s.270ms)
+
