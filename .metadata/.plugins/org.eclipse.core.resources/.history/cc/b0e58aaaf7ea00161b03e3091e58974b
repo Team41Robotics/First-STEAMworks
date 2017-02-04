@@ -25,11 +25,6 @@ public:
 
 	Timer *timer;
 
-
-	//does this work?
-
-
-
 	double curr_t =0.0;
 	double old_t =0.0;
 	double del_t =0.0;
