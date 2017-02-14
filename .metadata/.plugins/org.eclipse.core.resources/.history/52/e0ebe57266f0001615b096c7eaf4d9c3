@@ -1,0 +1,6 @@
+#include <CANTalon.h>
+#include <cmath>
+#include <algorithm>
+#include <math.h>
+
+#define G 385.827     //inches / ss

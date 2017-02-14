@@ -7,17 +7,26 @@
 #include <SmartDashboard/SendableChooser.h>
 #include <SmartDashboard/SmartDashboard.h>
 #include <Driving.h>
+#include <IMU.h>
+#include <WPILib_auxiliary.h>
+#include <opencv2/core/core.hpp>
+#include <CameraServer.h>
+#include <opencv2/imgproc/imgproc.hpp>
 
 class Robot: public frc::IterativeRobot {
 public:
 	Driving *motion_control;
 	Joystick *control_0;
+
+	CANTalon *shooterM1;
+	CANTalon *shooterM2;
+	CANTalon *barrel;
+
 	BuiltInAccelerometer *accel_0;
 	ADXL345_I2C *accel_1;
-
-	ADXRS450_Gyro *gyro_0;
-
-
+	//SPI *test;
+	ADXRS450_Gyro *test;
+	NetworkTable *table;
 
 	void RobotInit() {
 		chooser.AddDefault(autoNameDefault, autoNameDefault);
@@ -28,8 +37,12 @@ public:
 		//2 accelerometers because they both suck so maybe their sucking can interfere into no sucking?
 		accel_0 = new BuiltInAccelerometer();
 		accel_1 = new ADXL345_I2C(I2C::Port::kOnboard, Accelerometer::Range::kRange_4G);
-		gyro_0 = new ADXRS450_Gyro();
-		gyro_0->Calibrate();
+
+		test = new ADXRS450_Gyro(frc::SPI::Port::kOnboardCS0);//make sure gyro has a jumper between desired port and channel
+		test->Calibrate();
+		test->Reset();
+		table->GetTable("localhost");
+
 
 	}
 
@@ -67,16 +80,22 @@ public:
 	}
 
 	void TeleopInit() {
+		shooterM1 = new CANTalon(4);
+		shooterM2 = new CANTalon(8);
 
+		barrel = new CANTalon(5);
 	}
 
 	void TeleopPeriodic() {
-		//put shooter shit stuff here. (ponzio is watching)
-		//should be easy enough to do. Just setting it. The freshmen were tasked with this. They should have that stuff. I’ll add when we have the shooter.
 
-		//oh, gee, what else do they want?
+		shooterM1->Set(-((-control_0->GetRawAxis(3)+1.0)/2.0));
+		shooterM2->Set(((-control_0->GetRawAxis(3)+1.0)/2.0));
 
-		motion_control->Manual_driving(control_0);
+		barrel->Set(-control_0->GetRawAxis(1));
+
+		motion_control->Manual_driving(control_0,test);
+
+		SmartDashboard::PutNumber("fr",test->GetAngle());
 	}
 
 	void TestPeriodic() {

@@ -1,0 +1,18 @@
+20:17:42 **** Incremental Build of configuration Debug for project 02_Mecanum_Copied ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\02_Mecanum_Copied\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In function 'int main()':
+..\src\Robot.cpp:28:2: error: 'MecanumDefaultCode::MecanumDefaultCode()' is private
+  MecanumDefaultCode(void)
+  ^
+In file included from C:\Users\Robotics/wpilib/cpp/current/include/IterativeRobot.h:10:0,
+                 from ..\src\Robot.cpp:5:
+C:\Users\Robotics/wpilib/cpp/current/include/RobotBase.h:29:24: error: within this context
+     static _ClassName_ robot;                                                \
+                        ^
+..\src\Robot.cpp:45:1: note: in expansion of macro 'START_ROBOT_CLASS'
+ START_ROBOT_CLASS(MecanumDefaultCode);
+ ^
+
+20:17:43 Build Finished (took 1s.18ms)
+
