@@ -24,9 +24,11 @@ public:
 	CANTalon *barrel;
 	Joystick *control_0;
 	CANTalon *john;
+	CANTalon *testMotor;
 	PWM *lidar;
-	DigitalOutput *lidarTrigger;
+//	DigitalOutput *lidarTrigger;
 	AnalogInput *pot;
+	AnalogOutput *led;
 
 	//digitalOut *trigger;
 
@@ -66,15 +68,21 @@ public:
 		john = new CANTalon(1);
 		pot = new AnalogInput(2);
 
+		led= new AnalogOutput(1);
+
 		lidar = new PWM(0);
-		lidarTrigger = new DigitalOutput(1);
-		lidarTrigger->Set(false);
+//		lidarTrigger = new DigitalOutput(1);
+//		lidarTrigger->Set(false);
+		testMotor = new CANTalon(10);
+
 	}
 
 	void TeleopPeriodic()
 	{
 
-		lidar->GetRaw()
+		//lidar->GetRaw()
+		testMotor->Set(control_0->GetRawAxis(1));
+		led->SetVoltage(5);
 //		getPotAngle();
 		//shooterM1->Set(-((-control_0->GetRawAxis(3)+1.0)/2.0));
 		//shooterM2->Set(((-control_0->GetRawAxis(3)+1.0)/2.0));

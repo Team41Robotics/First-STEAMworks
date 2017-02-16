@@ -1,1 +1,20 @@
-Info: Nothing to build for -01_Prototyping_board
+21:48:09 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+
+21:48:09 Build Finished (took 868ms)
+

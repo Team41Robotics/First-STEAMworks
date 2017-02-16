@@ -18,9 +18,8 @@
 #include <cstdio>
 #include <iostream>
 #include <string>
-
+#include "LIDAR.h"
 //#include <Pot.h>
-
 
 class Robot: public frc::IterativeRobot {
 public:
@@ -31,6 +30,7 @@ public:
 	AHRS *nav;
 	//AnalogInput * test2;
 	//PWM *test;
+	LIDAR *lidar;
 	DigitalInput *test3;
 	Counter *test4;
 	CANTalon *tal;
@@ -65,7 +65,7 @@ public:
 
 		shooterM1 = new CANTalon(4);
 		shooterM2 = new CANTalon(8);
-
+		lidar = new LIDAR(true,LIDARLITE_ADDR_DEFAULT);
 		barrel = new CANTalon(5);
 	}
 
@@ -125,7 +125,7 @@ public:
 	}
 
 	void TeleopPeriodic() {
-		motion_control->Manual_driving(control_0);
+/*		motion_control->Manual_driving(control_0);
 		//tal->Set(control_0->GetRawAxis(3));
 //		SmartDashboard::PutNumber("something else",test->CheckPWMChannel(5));
 //		SmartDashboard::PutNumber("raw",test->GetRaw());
@@ -138,8 +138,9 @@ public:
 
 	//	printf("other 1 %f\n",test4->Get());
 		SmartDashboard::PutNumber("input o",test4->GetPeriod());
+*/
 		//SmartDashboard::PutNumber("input",test3->Get());
-
+		printf("%d\n",lidar->distance(false));
 
 
 		/*	imu->Localization(nav);

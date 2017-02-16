@@ -17,66 +17,50 @@ class Robot: public frc::IterativeRobot {
 public:
 	Driving *motion_control;
 	Joystick *control_0;
+	Joystick *control_1;
 
 	CANTalon *shooterM1;
 	CANTalon *shooterM2;
 	CANTalon *barrel;
-
+	CANTalon *shooterIntake;
+	CANTalon *intake;
 	BuiltInAccelerometer *accel_0;
-	ADXL345_I2C *accel_1;
+//	ADXL345_I2C *accel_1;
 	//SPI *test;
-	ADXRS450_Gyro *test;
+//	ADXRS450_Gyro *test;
 	NetworkTable *table;
 
+	Timer *timer;
+
+	bool intakeShooterSet;
 	void RobotInit() {
 		chooser.AddDefault(autoNameDefault, autoNameDefault);
 		chooser.AddObject(autoNameCustom, autoNameCustom);
 		frc::SmartDashboard::PutData("Auto Modes", &chooser);
 		motion_control = new Driving();
 		control_0 = new Joystick(0);
+		control_1 = new Joystick(1);
+
 		//2 accelerometers because they both suck so maybe their sucking can interfere into no sucking?
-		accel_0 = new BuiltInAccelerometer();
+/*		accel_0 = new BuiltInAccelerometer();
 		accel_1 = new ADXL345_I2C(I2C::Port::kOnboard, Accelerometer::Range::kRange_4G);
 
 		test = new ADXRS450_Gyro(frc::SPI::Port::kOnboardCS0);//make sure gyro has a jumper between desired port and channel
 		test->Calibrate();
-		test->Reset();
+		test->Reset();*/
 		table->GetTable("localhost");
 
-
+		intakeShooterSet = false;
+		timer = new Timer();
+		timer->Reset();
 	}
 
-	/*
-	 * This autonomous (along with the chooser code above) shows how to select
-	 * between different autonomous modes using the dashboard. The sendable
-	 * chooser code works with the Java SmartDashboard. If you prefer the
-	 * LabVIEW Dashboard, remove all of the chooser code and uncomment the
-	 * GetString line to get the auto name from the text box below the Gyro.
-	 *
-	 * You can add additional auto modes by adding additional comparisons to the
-	 * if-else structure below with additional strings. If using the
-	 * SendableChooser make sure to add them to the chooser code above as well.
-	 */
-
-
 	void AutonomousInit() override {
-		autoSelected = chooser.GetSelected();
-		// std::string autoSelected = SmartDashboard::GetString("Auto Selector", autoNameDefault);
-		std::cout << "Auto selected: " << autoSelected << std::endl;
 
-		if (autoSelected == autoNameCustom) {
-			// Custom Auto goes here
-		} else {
-			// Default Auto goes here
-		}
 	}
 
 	void AutonomousPeriodic() {
-		if (autoSelected == autoNameCustom) {
-			// Custom Auto goes here
-		} else {
-			// Default Auto goes here
-		}
+
 	}
 
 	void TeleopInit() {
@@ -84,18 +68,39 @@ public:
 		shooterM2 = new CANTalon(8);
 
 		barrel = new CANTalon(5);
+		shooterIntake = new CANTalon(1);
+
+		intake = new CANTalon(10);
 	}
 
 	void TeleopPeriodic() {
 
-		shooterM1->Set(-((-control_0->GetRawAxis(3)+1.0)/2.0));
-		shooterM2->Set(((-control_0->GetRawAxis(3)+1.0)/2.0));
+		if(control_1->GetRawButton(1)){
+			shooterM1->Set(-.8);//-((-control_1->GetRawAxis(3)+1.0)/2.0));
+			shooterM2->Set(.8);//((-control_1->GetRawAxis(3)+1.0)/2.0));
+			if(!intakeShooterSet){
+				timer->Start();
+				intakeShooterSet = true;
+			}
+			if(timer->Get()>0.5)
+				shooterIntake->Set(0.3);
+	 	}
+		else{
+			timer->Reset();
+			shooterM1->Set(0);
+			shooterM2->Set(0);
+			shooterIntake->Set(0);
+		}
+		barrel->Set(-control_1->GetRawAxis(1));
 
-		barrel->Set(-control_0->GetRawAxis(1));
+		motion_control->Manual_driving(control_0);
 
-		motion_control->Manual_driving(control_0,test);
-
-		SmartDashboard::PutNumber("fr",test->GetAngle());
+		if(control_0->GetRawButton(1)){
+			intake->Set(-(control_0->GetRawAxis(3)+1.0)/2.0);
+		}
+		else{
+			intake->Set(0);
+		}
 	}
 
 	void TestPeriodic() {

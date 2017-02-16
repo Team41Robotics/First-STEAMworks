@@ -1,0 +1,87 @@
+#include "LIDAR.h"
+
+LIDAR::LIDAR(int port, int configuration, char lidarAddress){
+	lidar = new I2C(port, lidarAddress);
+	configure(configuration,lidarAddress);
+	//neelay i know ABOUT YOUR N WORD PROBLEM - 2.0
+}
+
+void LIDAR::configure(int configuration, char lidarliteAddress)
+{
+  switch (configuration)
+  {
+    case 0: // Default mode, balanced performance
+      write(0x02,0x80,lidarliteAddress); // Default
+      write(0x04,0x08,lidarliteAddress); // Default
+      write(0x1c,0x00,lidarliteAddress); // Default
+    break;
+
+    case 1: // Short range, high speed
+      write(0x02,0x1d,lidarliteAddress);
+      write(0x04,0x08,lidarliteAddress); // Default
+      write(0x1c,0x00,lidarliteAddress); // Default
+    break;
+
+    case 2: // Default range, higher speed short range
+      write(0x02,0x80,lidarliteAddress); // Default
+      write(0x04,0x00,lidarliteAddress);
+      write(0x1c,0x00,lidarliteAddress); // Default
+    break;
+
+    case 3: // Maximum range
+      write(0x02,0xff,lidarliteAddress);
+      write(0x04,0x08,lidarliteAddress); // Default
+      write(0x1c,0x00,lidarliteAddress); // Default
+    break;
+
+    case 4: // High sensitivity detection, high erroneous measurements
+      write(0x02,0x80,lidarliteAddress); // Default
+      write(0x04,0x08,lidarliteAddress); // Default
+      write(0x1c,0x80,lidarliteAddress);
+    break;
+
+    case 5: // Low sensitivity detection, low erroneous measurements
+      write(0x02,0x80,lidarliteAddress); // Default
+      write(0x04,0x08,lidarliteAddress); // Default
+      write(0x1c,0xb0,lidarliteAddress);
+    break;
+  }
+}
+
+void LIDAR::reset(char lidarliteAddress)
+{
+  write(0x00,0x00,lidarliteAddress);
+}
+
+int LIDAR::distance(bool biasCorrection, char lidarliteAddress)
+{
+  if(biasCorrection)
+  {
+    // Take acquisition & correlation processing with receiver bias correction
+    write(0x00,0x04,lidarliteAddress);
+  }
+  else
+  {
+    // Take acquisition & correlation processing without receiver bias correction
+    write(0x00,0x03,lidarliteAddress);
+  }
+  // Array to store high and low bytes of distance
+  char distanceArray[2];
+  // Read two bytes from register 0x8f (autoincrement for reading 0x0f and 0x10)
+  read(0x8f,2,distanceArray,true,lidarliteAddress);
+  // Shift high byte and add to low byte
+  int distance = (distanceArray[0] << 8) + distanceArray[1];
+  return(distance);
+}
+
+void LIDAR::write(char myAddress, char myValue, char lidarliteAddress)
+{
+  lidar->Write((int)lidarliteAddress,(int)myAddress);
+  lidar->Write((int)lidarliteAddress,(int)myValue);
+}
+
+void LIDAR::read(char myAddress, int numOfBytes, unsigned char arrayToSave[2], char lidarliteAddress)
+{
+	lidar->Write((int)lidarliteAddress,(int)myAddress);
+	lidar->Read((int)lidarliteAddress,numOfBytes,arrayToSave);
+}

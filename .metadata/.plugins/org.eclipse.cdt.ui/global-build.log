@@ -8073,3 +8073,809 @@ Info: Nothing to build for 03_NetworkTableTest
 Info: Nothing to build for 04_mecanum_invariant
 Info: Nothing to build for 05_auton
 Info: Nothing to build for 06_LIDAR
+19:28:30 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+19:28:33 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:28:2: error: 'DigitalOutput' does not name a type
+  DigitalOutput *lidarTrigger;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:70:3: error: 'lidarTrigger' was not declared in this scope
+   lidarTrigger = new DigitalOutput(1);
+   ^
+..\src\Robot.cpp:70:22: error: expected type-specifier before 'DigitalOutput'
+   lidarTrigger = new DigitalOutput(1);
+                      ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:105:2: error: expected ';' before '}' token
+  }
+  ^
+Info: Nothing to build for 00_Mecanum_drive
+19:28:34 **** Incremental Build of configuration Debug for project 01_Mecanum_direction_invariant ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+19:28:35 **** Incremental Build of configuration Debug for project 02_Mecanum_direction_invariant3 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+19:28:35 **** Incremental Build of configuration Debug for project 03_NetworkTableTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+19:28:36 **** Incremental Build of configuration Debug for project 04_mecanum_invariant ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\ExampleSubsystem.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+19:28:36 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+19:28:37 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+19:33:11 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+19:33:13 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+18:56:07 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Driving.o" "..\\src\\Driving.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:56:12 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for 00_Mecanum_drive
+18:56:13 **** Incremental Build of configuration Debug for project 01_Mecanum_direction_invariant ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:56:14 **** Incremental Build of configuration Debug for project 02_Mecanum_direction_invariant3 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:56:15 **** Incremental Build of configuration Debug for project 03_NetworkTableTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:56:15 **** Incremental Build of configuration Debug for project 04_mecanum_invariant ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\ExampleSubsystem.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:56:16 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:56:17 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+18:56:17 **** Rebuild of configuration Debug for project 07_Mecanum_drive_updated ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\07_Mecanum_drive_updated\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Driving.o" "..\\src\\Driving.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\07_Mecanum_drive_updated\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\IMU.o" "..\\src\\IMU.cpp" 
+..\src\IMU.cpp: In member function 'double IMU::complementaryIMU(double, double, int)':
+..\src\IMU.cpp:24:9: warning: unused variable 'dtC' [-Wunused-variable]
+  double dtC = loop/1000.0;
+         ^
+..\src\IMU.cpp:26:26: warning: 'angle' is used uninitialized in this function [-Wuninitialized]
+  double angle = a* (angle+ gyroAngle) + (1-a) * accel_x;
+                          ^
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\07_Mecanum_drive_updated\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:113:68: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+    fprintf(shooterData, "%d\t%d\n", shooterM1->Get(), getPotAngle());
+                                                                    ^
+..\src\Robot.cpp:113:68: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat=]
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:56:47 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+18:56:48 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+18:59:45 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+18:59:48 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:01:15 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:01:18 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:03:27 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:03:30 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:04:39 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:04:42 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:05:20 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:05:23 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:06:57 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:07:00 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:10:38 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:10:41 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:11:38 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:11:41 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:28:45 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:28:48 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:29:44 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:29:47 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+19:42:43 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\00_Mecanum_drive\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+19:42:46 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp: In constructor 'LIDAR::LIDAR(int, int, char)':
+..\src\LIDAR.cpp:4:36: error: invalid conversion from 'int' to 'frc::I2C::Port' [-fpermissive]
+  lidar = new I2C(port, lidarAddress);
+                                    ^
+In file included from ..\src\LIDAR.h:4:0,
+                 from ..\src\LIDAR.cpp:1:
+C:\Users\Robotics/wpilib/cpp/current/include/I2C.h:25:3: note: initializing argument 1 of 'frc::I2C::I2C(frc::I2C::Port, int)'
+   I2C(Port port, int deviceAddress);
+   ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+20:07:18 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+20:16:56 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+20:16:57 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+20:16:59 **** Incremental Build of configuration Debug for project 07_Mecanum_drive_updated ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\07_Mecanum_drive_updated\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:113:68: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+    fprintf(shooterData, "%d\t%d\n", shooterM1->Get(), getPotAngle());
+                                                                    ^
+..\src\Robot.cpp:113:68: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat=]
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+20:26:39 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
+..\src\Robot.cpp:68:22: error: no matching function for call to 'LIDAR::LIDAR(int)'
+   lidar = new LIDAR(0);
+                      ^
+..\src\Robot.cpp:68:22: note: candidates are:
+In file included from ..\src\Robot.cpp:21:0:
+..\src\LIDAR.h:12:7: note: LIDAR::LIDAR(int, char)
+       LIDAR(int configuration, char lidarAddress);
+       ^
+..\src\LIDAR.h:12:7: note:   candidate expects 2 arguments, 1 provided
+..\src\LIDAR.h:8:7: note: constexpr LIDAR::LIDAR(const LIDAR&)
+ class LIDAR
+       ^
+..\src\LIDAR.h:8:7: note:   no known conversion for argument 1 from 'int' to 'const LIDAR&'
+..\src\LIDAR.h:8:7: note: constexpr LIDAR::LIDAR(LIDAR&&)
+..\src\LIDAR.h:8:7: note:   no known conversion for argument 1 from 'int' to 'LIDAR&&'
+20:27:11 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
+..\src\Robot.cpp:68:21: error: no matching function for call to 'LIDAR::LIDAR()'
+   lidar = new LIDAR();
+                     ^
+..\src\Robot.cpp:68:21: note: candidates are:
+In file included from ..\src\Robot.cpp:21:0:
+..\src\LIDAR.h:12:7: note: LIDAR::LIDAR(int, char)
+       LIDAR(int configuration, char lidarAddress);
+       ^
+..\src\LIDAR.h:12:7: note:   candidate expects 2 arguments, 0 provided
+..\src\LIDAR.h:8:7: note: constexpr LIDAR::LIDAR(const LIDAR&)
+ class LIDAR
+       ^
+..\src\LIDAR.h:8:7: note:   candidate expects 1 argument, 0 provided
+..\src\LIDAR.h:8:7: note: constexpr LIDAR::LIDAR(LIDAR&&)
+..\src\LIDAR.h:8:7: note:   candidate expects 1 argument, 0 provided
+20:31:04 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+..\src\LIDAR.cpp:9:95: error: default argument given for parameter 1 of 'void LIDAR::configure(int, char)'
+ void LIDAR::configure(int configuration = true, char lidarliteAddress = LIDARLITE_ADDR_DEFAULT)
+                                                                                               ^
+In file included from ..\src\LIDAR.cpp:1:0:
+..\src\LIDAR.h:13:12: note: previous specification in 'void LIDAR::configure(int, char)' here
+       void configure(int = 0, char = LIDARLITE_ADDR_DEFAULT);
+            ^
+..\src\LIDAR.cpp:9:95: error: default argument given for parameter 2 of 'void LIDAR::configure(int, char)' [-fpermissive]
+ void LIDAR::configure(int configuration = true, char lidarliteAddress = LIDARLITE_ADDR_DEFAULT)
+                                                                                               ^
+In file included from ..\src\LIDAR.cpp:1:0:
+..\src\LIDAR.h:13:12: note: previous specification in 'void LIDAR::configure(int, char)' here
+       void configure(int = 0, char = LIDARLITE_ADDR_DEFAULT);
+            ^
+20:31:33 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+20:39:36 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+20:40:12 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+20:42:08 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+21:35:54 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+21:35:57 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+21:37:58 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+21:38:00 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+21:42:17 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+21:42:20 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+21:43:01 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+21:43:03 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+21:44:40 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+21:44:41 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+21:45:05 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LIDAR.o" "..\\src\\LIDAR.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LIDAR.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+21:45:06 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+21:48:08 **** Incremental Build of configuration Debug for project 00_Mecanum_drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+21:48:09 **** Incremental Build of configuration Debug for project -01_Prototyping_board ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\-01_Prototyping_board\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:31:2: error: 'AnalogOutput' does not name a type
+  AnalogOutput *led;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+..\src\Robot.cpp:71:3: error: 'led' was not declared in this scope
+   led= new AnalogOutput(1);
+   ^
+..\src\Robot.cpp:71:12: error: expected type-specifier before 'AnalogOutput'
+   led= new AnalogOutput(1);
+            ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:85:3: error: 'led' was not declared in this scope
+   led->SetVoltage(5);
+   ^
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
