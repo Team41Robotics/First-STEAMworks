@@ -6,13 +6,14 @@
 
 Driving::Driving ()
 {
-    M_fr = new CANTalon(1);
-    M_fl = new CANTalon(2);
-    M_br = new CANTalon(3);
-    M_bl = new CANTalon(4);
+	M_fr = new CANTalon(9);
+	M_fl = new CANTalon(3);
+	M_br = new CANTalon(6);
+	M_bl = new CANTalon(7);
     throt = 0.0;
     throt_min = .13;
     throt_rng = 0.87;
+    direction_angle = 0;
 }
 
 double Driving::absD (double a) //this may need to be put in a new class. I assumed “Aux_functions”. Only if it is used in other classes.

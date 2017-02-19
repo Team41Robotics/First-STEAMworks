@@ -22,6 +22,8 @@ public:
 	AHRS *nav;
 	Timer *timer;
 	double time = 0.0;
+	int auton_step = 0;
+
 
 	void RobotInit() {
 		chooser.AddDefault(autoNameDefault, autoNameDefault);
@@ -64,27 +66,93 @@ public:
 		}
 		timer->Reset();
 		timer->Start();
-
+		imu->Reset(nav);
+		auton_step = 0;
 	}
 	void AutonomousPeriodic() {
 		time = timer->Get();
 		if (autoSelected == autoNameCustom) {
 			imu->Localization(nav);
-			if(imu->position_y < 114)
+
+/*
+			if(auton_step == 0)
 			{
-				motion_control->Auto_Move(-0.25,-0.25,-0.25,-0.25);
+				motion_control->Auto_Move(0.5, 0.5, 0.5, 0.5);
+				if(lidar->get_distance() >= m )
+					auton_step = 1;
 			}
-			else if(imu->theta < 30)
+			else if(auton_step == 1)
 			{
+				motion_control->Auto_Move(0.5, -0.5, 0.5, -0.5);
+				if(imu->theta <= -120.0)
+					auton_step = 2;
+			}
+			else if(auton_step == 2)
+			{
+				motion_control->Auto_Move(-0.5, -0.5, -0.5, -0.5);
+				if(lidar->get_distance() <= 10.0 )
+					auton_step = 3;
+			}
+			else
+			{
+				motion_control->Auto_Move(0.0,0.0,0.0,0.0);
+			}
+*/
+
+/*
+			lidar->get_distance(); //distance
+
+			imu->theta; // angle
+
+			imu->Reset(nav);
+*/
+
+
+
+
+
+
+
+			if(auton_step == 0)
+			{
+				motion_control->Auto_Move(-0.5,-0.5,-0.5,-0.5);
+				if(imu->position_y < 135.4)
+					auton_step = 1;
+			}
+			else if(auton_step == 1)
+			{
+				imu->ResetPos();
 				motion_control->Auto_Move(+0.25,-0.25,+0.25,-0.25);
+				if(imu->theta < 90)
+					auton_step = 2;
 			}
-			else if(imu->position_x < 12.5)
+			else if(auton_step == 2)
 			{
-				motion_control->Auto_Move(-0.50,-0.50,-0.50,-0.50);;
+				motion_control->Auto_Move(-0.50,-0.50,-0.50,-0.50);
+				if(imu->position_y <  0.0)
+					auton_step = 3;
 			}
+			else
+			{
+				motion_control->Auto_Move(0,0,0,0);
+			}
+
 
 		} else {
 			// Default Auto goes here
+
+			time = timer->Get();
+			imu->Localization(nav);
+			SmartDashboard::PutNumber("distance",imu->position_y);
+			if(imu->position_y < 1.00)
+			{
+
+				motion_control->Auto_Move(-0.5,-0.5,-0.5,-0.5);
+			}
+
+
+
+
 		}
 	}
 
@@ -95,7 +163,17 @@ public:
 	void TeleopPeriodic() {
 		motion_control->Manual_driving(control_0);
 
+
+
 		imu->Localization(nav);
+
+		SmartDashboard::PutNumber("raw Accel",nav->GetRawAccelY());
+		SmartDashboard::PutNumber("raw Accelx",nav->GetRawAccelX());
+		SmartDashboard::PutNumber("raw gyroz",nav->GetRawGyroZ());
+		SmartDashboard::PutNumber("raw gyrox",nav->GetRawGyroX());
+		SmartDashboard::PutNumber("raw gyroy",nav->GetRawGyroY());
+		SmartDashboard::PutNumber("velocity ",nav->GetVelocityY());
+
 		SmartDashboard::PutNumber("X", imu->position_x);
 		SmartDashboard::PutNumber("Y", imu->position_y);
 		SmartDashboard::PutNumber("vel x", imu->velocity_x);
@@ -107,8 +185,7 @@ public:
 
 		if(control_0->GetRawButton(12))
 		{
-			nav->ZeroYaw();
-			nav->ResetDisplacement();
+			imu->Reset(nav);
 		}
 		//imu->Localization(nav);
 		//SmartDashboard::PutNumber("X",imu->position_x);

@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="pot" key="selection"/>
+		<item value="autoNameCustom" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="pot"/>
-			<item value="5"/>
-			<item value="fa"/>
-			<item value="Kalman"/>
-			<item value="Localization"/>
-			<item value="motion"/>
-			<item value="M_bl"/>
-			<item value="CANTalon(7)"/>
+			<item value="autoNameCustom"/>
+			<item value="auton"/>
+			<item value="roller"/>
+			<item value="CAN"/>
+			<item value="shooterintake"/>
+			<item value="shooterIntake"/>
+			<item value="lidar"/>
+			<item value=".local"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

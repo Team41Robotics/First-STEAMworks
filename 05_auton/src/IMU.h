@@ -4,6 +4,7 @@
 #include "WPILib_auxiliary.h"
 
 
+#define INCHES_TO_CENTIMETERS 2.54
 #define RAD 3.14159 / 180.0
 
 #define K_a0 0.5
@@ -43,6 +44,8 @@ public:
 	void Localization(AHRS *nav);
 	void get_delta_time();
 	double del_t =0.0;
+	void Reset(AHRS *nav);
+	void ResetPos();
 };
 
 #endif /* SRC_IMU_H_ */

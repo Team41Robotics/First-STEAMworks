@@ -18,7 +18,13 @@
 #include <cstdio>
 #include <iostream>
 #include <string>
-#include "LIDAR.h"
+#include "LidarLite.h"
+
+#define totalDimension 162
+#define dim1 25 //we’ll need to change this
+
+int  i=0;
+
 //#include <Pot.h>
 
 class Robot: public frc::IterativeRobot {
@@ -30,7 +36,7 @@ public:
 	AHRS *nav;
 	//AnalogInput * test2;
 	//PWM *test;
-	LIDAR *lidar;
+	LidarLite *lidar;
 	DigitalInput *test3;
 	Counter *test4;
 	CANTalon *tal;
@@ -38,7 +44,9 @@ public:
 	double time = 0.0;
 	Potentiometer *pot;
 
-
+	/*double autonDriveSTR(double velocity);
+	double autonDriveTurn(double velocity);
+*/
 
 	CANTalon *shooterM2;
 	CANTalon *shooterM1;
@@ -65,7 +73,7 @@ public:
 
 		shooterM1 = new CANTalon(4);
 		shooterM2 = new CANTalon(8);
-		lidar = new LIDAR(true,LIDARLITE_ADDR_DEFAULT);
+		lidar = new LidarLite(I2C::Port::kOnboard);
 		barrel = new CANTalon(5);
 	}
 
@@ -121,7 +129,7 @@ public:
 	}
 
 	void TeleopInit() {
-
+		lidar->SetFreeRun(true);
 	}
 
 	void TeleopPeriodic() {
@@ -140,8 +148,10 @@ public:
 		SmartDashboard::PutNumber("input o",test4->GetPeriod());
 */
 		//SmartDashboard::PutNumber("input",test3->Get());
-		printf("%d\n",lidar->distance(false));
-
+		printf("config %d",lidar->getConfig());
+		printf("get dE: %d",lidar->getDistanceOtherEndianness());
+		printf("busy: %d",lidar->isBusy());
+		printf("dist: %d\n",lidar->getDistance());
 
 		/*	imu->Localization(nav);
 		SmartDashboard::PutNumber("X", imu->position_x);

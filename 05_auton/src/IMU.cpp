@@ -80,15 +80,24 @@ double IMU::modulo(double i, double j){
 void IMU::Localization (AHRS *nav)
 {
 	get_delta_time();
-	//position_x = nav->GetDisplacementX()*39.37;
-	//position_y = nav->GetDisplacementY()*39.37;
-	//position_r = nav->GetYaw();
 	theta = nav->GetAngle();
-	accel_x = nav->GetRawAccelX();
-	accel_y = nav->GetRawAccelY();
-	double accel_mag = sqrt(accel_x * accel_x + accel_y * accel_y);
-	velocity_x += cos(theta) * del_t * accel_mag;
-	velocity_y += sin(theta) * del_t * accel_mag;
-	position_x += velocity_x * del_t;
-	position_y += velocity_y * del_t;
+	//accel_x = nav->GetRawAccelX()*G;
+	//accel_y = nav->GetRawAccelY()*G;
+
+	//velocity_x += accel_x * del_t;
+	///velocity_y += accel_y * del_t;
+	position_x += nav->GetVelocityX() * del_t;
+	position_y += nav->GetVelocityY() * del_t;
+}
+
+void IMU::Reset(AHRS *nav)
+{
+	nav->Reset();
+	position_x = 0.0;
+	position_y = 0.0;
+}
+void IMU::ResetPos()
+{
+	position_x = 0.0;
+	position_y = 0.0;
 }

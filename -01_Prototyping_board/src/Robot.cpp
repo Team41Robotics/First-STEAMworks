@@ -6,6 +6,9 @@
 #include <RobotBase.h>
 #include <stdio.h>
 #include <cmath>
+#include <AnalogOutput.h>
+#include <Counter.h>
+#include <WPILib.h>
 
 using namespace std;
 #include <vector>
@@ -30,6 +33,8 @@ public:
 	AnalogInput *pot;
 	AnalogOutput *led;
 
+	Counter *test_boy;
+
 	//digitalOut *trigger;
 
 /*	struct Motor {
@@ -47,6 +52,10 @@ public:
 		currMotors.push_back(newMotor);
 	}
 */
+	void RobotInit()
+	{
+		test_boy = new Counter(0);
+	}
 	void AutonomousInit()
 	{
 
@@ -66,28 +75,31 @@ public:
 		control_0 = new Joystick(0);
 
 		john = new CANTalon(1);
-		pot = new AnalogInput(2);
+		pot = new AnalogInput(3);
 
-		led= new AnalogOutput(1);
+		led= new AnalogOutput(0);
 
-		lidar = new PWM(0);
+//		lidar = new PWM(0);
 //		lidarTrigger = new DigitalOutput(1);
 //		lidarTrigger->Set(false);
 		testMotor = new CANTalon(10);
-
 	}
 
 	void TeleopPeriodic()
 	{
 
 		//lidar->GetRaw()
-		testMotor->Set(control_0->GetRawAxis(1));
-		led->SetVoltage(5);
+//		testMotor->Set(control_0->GetRawAxis(1));
+	//	led->SetVoltage(5.0);
+		getPotAngle();
 //		getPotAngle();
 		//shooterM1->Set(-((-control_0->GetRawAxis(3)+1.0)/2.0));
 		//shooterM2->Set(((-control_0->GetRawAxis(3)+1.0)/2.0));
 		//1 monitr
 		//0 trig
+		//SmartDashboard::PutNumber("period",test_boy->GetPeriod());
+
+		printf("period %f\n",test_boy->GetPeriod());
 
 		//printf("input %f\n", 2.0*acos(control_0->GetRawAxis(1))/PI-1.0 );
 		//printf("input %f : real %f\n", pow(-control_0->GetRawAxis(1),2.2) ,-control_0->GetRawAxis(1));
@@ -118,8 +130,8 @@ public:
 	}
 	double getPotAngle()
 	{
-		double read = pot->GetVoltage();
-		double angle = (read/4.813)*300.0;
+		double read = pot->GetVoltage()-4.11;
+		double angle = (read/0.7079)*300.0;//check scale again (TEST AGAIN)   4.813
 		SmartDashboard::PutNumber("Raw pot", read);
 		SmartDashboard::PutNumber("Pot Angle:", angle);
 		return angle;

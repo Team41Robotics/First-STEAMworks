@@ -3,7 +3,7 @@
 #include "WPILib.h"
 #include "WPILib_auxiliary.h"
 
-#define G 9.80665
+#define G 980.665
 #define RAD 3.14159265359 / 180.0
 
 #define K_a0 0.5

@@ -41,6 +41,14 @@ public:
 		double read = pot->GetVoltage();
 		return (read/4.813)*300.0;
 	}
+/*
+	double getPotAngle()
+	{
+		double read = pot->GetVoltage()-4.11;
+		double retrun = (read/0.7079)*300.0;//check scale again (TEST AGAIN)   4.813
+	}
+*/
+
 	void RobotInit() {
 		chooser.AddDefault(autoNameDefault, autoNameDefault);
 		chooser.AddObject(autoNameCustom, autoNameCustom);
@@ -117,6 +125,8 @@ public:
 	void TestPeriodic() {
 		lw->Run();
 	}
+
+
 
 private:
 	frc::LiveWindow* lw = LiveWindow::GetInstance();

@@ -30,7 +30,20 @@ public:
 //	ADXRS450_Gyro *test;
 	NetworkTable *table;
 
+	Talon *shooterIntake_Aux_Left;
+	Talon *shooterIntake_Aux_Right;
+
 	Timer *timer;
+
+
+//
+/*	double totalDimension = 162;
+	double dim1  = 25; //we’ll need to change this
+	int  auton_i=0;
+	*/
+
+
+
 
 	bool intakeShooterSet;
 	void RobotInit() {
@@ -41,6 +54,8 @@ public:
 		control_0 = new Joystick(0);
 		control_1 = new Joystick(1);
 
+		shooterIntake_Aux_Left = new Talon(0);//Servo(0);
+		shooterIntake_Aux_Right = new Talon(9);//Servo(9);
 		//2 accelerometers because they both suck so maybe their sucking can interfere into no sucking?
 /*		accel_0 = new BuiltInAccelerometer();
 		accel_1 = new ADXL345_I2C(I2C::Port::kOnboard, Accelerometer::Range::kRange_4G);
@@ -48,6 +63,14 @@ public:
 		test = new ADXRS450_Gyro(frc::SPI::Port::kOnboardCS0);//make sure gyro has a jumper between desired port and channel
 		test->Calibrate();
 		test->Reset();*/
+		shooterM1 = new CANTalon(4);
+		shooterM2 = new CANTalon(8);
+
+		barrel = new CANTalon(5);
+		shooterIntake = new CANTalon(1);
+
+		intake = new CANTalon(10);
+
 		table->GetTable("localhost");
 
 		intakeShooterSet = false;
@@ -58,32 +81,54 @@ public:
 	void AutonomousInit() override {
 
 	}
-
 	void AutonomousPeriodic() {
-
+/*
+		int movement = (139.3*sqrt(3)-((totalDimension)-dim1))/sqrt(3);
+		double velocity = 0.5;
+		if (auton_i == 0)//move forward before turn
+		{
+		    if(imu->position_y>=movement)
+		    {
+		    	auton_i=1;
+		        imu->resetpos();
+		    }
+		    Move(velocity,velocity,velocity,velocity);
+		    }
+		else if(auton_i ==1)//turn (60 deg)
+		{
+		if(imu->theta>= 60)
+		{
+			auton_i=2;
+			imu->resetpos();
+		}
+		Move(velocity,-velocity,velocity,-velocity);		}
+		else if (auton_i==2)//move to gear drop location
+		{
+		    //lidar stuff
+			imu->resetpos();
+		}
+		else
+		{
+		    //get out of auton
+		}
+*/
 	}
 
 	void TeleopInit() {
-		shooterM1 = new CANTalon(4);
-		shooterM2 = new CANTalon(8);
 
-		barrel = new CANTalon(5);
-		shooterIntake = new CANTalon(1);
-
-		intake = new CANTalon(10);
 	}
 
 	void TeleopPeriodic() {
 
 		if(control_1->GetRawButton(1)){
-			shooterM1->Set(-.8);//-((-control_1->GetRawAxis(3)+1.0)/2.0));
-			shooterM2->Set(.8);//((-control_1->GetRawAxis(3)+1.0)/2.0));
+			shooterM1->Set(-((-control_1->GetRawAxis(3)+1.0)/2.0));
+			shooterM2->Set(((-control_1->GetRawAxis(3)+1.0)/2.0));
 			if(!intakeShooterSet){
 				timer->Start();
 				intakeShooterSet = true;
 			}
 			if(timer->Get()>0.5)
-				shooterIntake->Set(0.3);
+				shooterIntake->Set(0.8);//pretty much tested, any value higher is not gonna make a difference -N
 	 	}
 		else{
 			timer->Reset();
@@ -91,16 +136,33 @@ public:
 			shooterM2->Set(0);
 			shooterIntake->Set(0);
 		}
-		barrel->Set(-control_1->GetRawAxis(1));
+		barrel->Set(control_1->GetRawAxis(1));
 
 		motion_control->Manual_driving(control_0);
 
 		if(control_0->GetRawButton(1)){
-			intake->Set(-(control_0->GetRawAxis(3)+1.0)/2.0);
+			//intake->Set(-((-control_0->GetRawAxis(3)+1.0)/2.0));//with the throttle
+			intake->Set(-0.75);
+		}
+		else if(control_0->GetRawButton(3)){
+			intake->Set(0.75);
 		}
 		else{
 			intake->Set(0);
 		}
+
+		if(control_1->GetRawButton(6))
+		{
+			shooterIntake_Aux_Left->Set(-0.9);
+			shooterIntake_Aux_Right->Set(0.7);
+		}
+		else
+		{
+			shooterIntake_Aux_Left->Set(0.0);
+			shooterIntake_Aux_Right->Set(0.0);
+		}
+		//shooterIntake_Aux_Left->Set(0.90);
+
 	}
 
 	void TestPeriodic() {
