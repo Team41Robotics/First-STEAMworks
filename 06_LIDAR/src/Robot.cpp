@@ -73,7 +73,7 @@ public:
 
 		shooterM1 = new CANTalon(4);
 		shooterM2 = new CANTalon(8);
-		lidar = new LidarLite(I2C::Port::kOnboard);
+		lidar = new LidarLite(I2C::Port::kOnboard,0X62);
 		barrel = new CANTalon(5);
 	}
 
@@ -129,50 +129,16 @@ public:
 	}
 
 	void TeleopInit() {
-		lidar->SetFreeRun(true);
+		lidar->reset();
 	}
 
 	void TeleopPeriodic() {
-/*		motion_control->Manual_driving(control_0);
-		//tal->Set(control_0->GetRawAxis(3));
-//		SmartDashboard::PutNumber("something else",test->CheckPWMChannel(5));
-//		SmartDashboard::PutNumber("raw",test->GetRaw());
-//		SmartDashboard::PutNumber("width",test2->GetVoltage());
-		//printf("raw %f\n",test->GetRaw());
 
-		shooterM1->Set(-((-control_0->GetRawAxis(3)+1.0)/2.0));
-		shooterM2->Set(((-control_0->GetRawAxis(3)+1.0)/2.0));
-		barrel->Set(-control_0->GetRawAxis(1));
+		lidar->reset();
+		if(lidar->isMeasurementValid(false))
+			SmartDashboard::PutNumber("lidar",lidar->getDistance()*0.394);
 
-	//	printf("other 1 %f\n",test4->Get());
-		SmartDashboard::PutNumber("input o",test4->GetPeriod());
-*/
-		//SmartDashboard::PutNumber("input",test3->Get());
-		printf("config %d",lidar->getConfig());
-		printf("get dE: %d",lidar->getDistanceOtherEndianness());
-		printf("busy: %d",lidar->isBusy());
-		printf("dist: %d\n",lidar->getDistance());
-
-		/*	imu->Localization(nav);
-		SmartDashboard::PutNumber("X", imu->position_x);
-		SmartDashboard::PutNumber("Y", imu->position_y);
-		SmartDashboard::PutNumber("vel x", imu->velocity_x);
-		SmartDashboard::PutNumber("vel Y", imu->velocity_y);
-		SmartDashboard::PutNumber("accel Y", imu->accel_y);
-		SmartDashboard::PutNumber("accel X", imu->accel_x);
-*/
-		//SmartDashboard::PutNumber("D Y", nav->GetDisplacementX());
-/*
-		if(control_0->GetRawButton(12))
-		{
-			nav->ZeroYaw();
-			nav->ResetDisplacement();
-		}
-		//imu->Localization(nav);
-		//SmartDashboard::PutNumber("X",imu->position_x);
-		//SmartDashboard::PutNumber("Y",imu->position_y);
-		//SmartDashboard::PutNumber("R",imu->position_r);
-	*/
+		motion_control->Manual_driving(control_0);
 	}
 
 	void TestPeriodic() {

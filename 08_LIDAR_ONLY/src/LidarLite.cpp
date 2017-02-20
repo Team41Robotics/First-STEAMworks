@@ -6,7 +6,7 @@
 	{
 
 		m_biascorrectionenable = true;
-		m_freerun = false;//FREE RUN OFF
+		m_freerun = true;//FREE RUN OFF
 		initialize();
 	}
 
@@ -24,9 +24,10 @@
 	{
 		if (enable)
 			measurementRepeat(0xff);
-		else
-			measurementRepeat(0x01);
+//		else
+//			measurementRepeat(0x01);
 	}
+
 	void LidarLite::setUpdateDelay(uint8_t delay)
 	/*
 	 * 0xff = 255 = 7.8hz
@@ -53,7 +54,7 @@
 
 	void LidarLite::initialize()
 	{
-		//SetFreeRun(m_freerun);
+		SetFreeRun(m_freerun);
 	}
 
 
@@ -64,8 +65,15 @@
 		//send reset
 		Write(Commands::kACQ_COMMAND, 0x00);
 
+//		initialize();
+	}
 
-		initialize();
+	void LidarLite::getMeasurement()
+	//resets the device
+	{
+	    Wait(.02);
+		Write(Commands::kACQ_COMMAND, 0x04);
+
 	}
 
 
@@ -73,88 +81,20 @@
 	//returns in cm
 	{
 		  int16_t distance = 0;
+		  if(!m_freerun)
+			  getMeasurement();
+		  else
+			  Wait(0.05);
 
-		  Write(0x00, 0x00);
-		  Wait(.025);
-		  Write(0x00, 0x04);
-		  Wait(.005);
-
-		  unsigned char djoSendData[1];
-		  unsigned char LidarMassData[2];
-
-/*		  ReadOnly(1,reinterpret_cast<uint8_t*>(&distance));
-		  distance >>= 8;
-		  ReadOnly(1,reinterpret_cast<uint8_t*>(&distance));*/
-
-	      djoSendData[0] = 0x8F;  // Bulk Write Based Read_Only for a two register Read of 0x8F (distance)
-		  WriteBulk(djoSendData,1);
-		  ReadOnly(2,LidarMassData);
-		  printf("Mass Data 0 %4X \n", LidarMassData[0]);
-		  printf("Mass Data 1 %4X \n", LidarMassData[1]);
-		  distance = (LidarMassData[0]<<8)+LidarMassData[1];
-/*
-		//if LIDAR is not taking measurements constantly, take one now
-		if (!m_freerun)
-			if (m_biascorrectionenable){
-				WriteBulk(reinterpret_cast<uint8_t*>(Commands::kACQ_COMMAND), 1);
-				WriteBulk(reinterpret_cast<uint8_t*>(0x04), 1);}
-			else
-				Write(Commands::kACQ_COMMAND, 0x03);
-
-		Write(0x00, 0x00);
-	    Wait(.025);
-	    Write(0x00, 0x04);
-	    Wait(.005);
-
-		int16_t distance = 0;
-	    unsigned char djoSendData[1];
-	    unsigned char LidarMassData[2];
-	      djoSendData[0] = 0x01;  // Bulk Write Based Read_Only for a single register Read of 0x01 (status)
-	      WriteBulk(djoSendData,1);
-	      ReadOnly(1,LidarMassData);
-	      printf("Mass Data 0 %4X \n", LidarMassData[0]);
-	      Wait(0.001);
-
-	    djoSendData[0] = 0x8F;  // Bulk Write Based Read_Only for a two register Read of 0x8F (distance)
-	    WriteBulk(djoSendData,1);
-
-
-		/*
-	    ReadOnly(2,LidarMassData);
-	    printf("Mass Data 0 %4X \n", LidarMassData[0]);
-	    printf("Mass Data 1 %4X \n", LidarMassData[1]);*/
-
-/*
-
-		//read low byte
-//	    WriteBulk(reinterpret_cast<uint8_t*>((Commands::kLAST_DELAY_LOW)),1);
-	    unsigned char *getDistRegister;
-	    *getDistRegister = 0x8F;
-	    unsigned char distances[2];
-
-	    WriteBulk(getDistRegister,1);
-	    ReadOnly(2,distances);
-	    printf("Mass Data 0 %4X \n", distances[0]);
-	    printf("Mass Data 1 %4X \n", distances[1]);
-	    ReadOnly(1,reinterpret_cast<uint8_t*>(&distance));
-		distance >>= 8;	//shove low byte to lower 8
-	    ReadOnly(1,reinterpret_cast<uint8_t*>(&distance));
-
-		//read high order
-//	    WriteBulk(reinterpret_cast<uint8_t*>((Commands::kLAST_DELAY_HIGH)),1);
-//	    ReadOnly(1,reinterpret_cast<uint8_t*>(&distance));
-	    */
-		return 0;
+		  unsigned char distanceRegister[1];
+		  unsigned char LidarData[2];
+//		  while(isBusy());
+		  distanceRegister[0] = kDIST_HIGHLOW;
+		  WriteBulk(distanceRegister,1);
+		  ReadOnly(2,LidarData);
+		  distance = (LidarData[0]<<8)+LidarData[1];
+		  return distance;
 	}
-
-	uint16_t LidarLite::getDistanceOtherEndianness()
-	{
-		uint16_t distance = getDistance();
-		uint16_t temp = distance<<8 | distance >>8;
-		return temp;
-
-	}
-
 
 	double LidarLite::getVelocity()
 	/* doesnt work, fix it
@@ -200,7 +140,10 @@
 	uint8_t LidarLite::getStatus()
 	{
 		uint8_t status = 0;
-		WriteBulk(reinterpret_cast<uint8_t*>(Commands::kSTATUS),1);
+		unsigned char statusRegister[1];
+
+		statusRegister[0] = kSTATUS;
+		WriteBulk(statusRegister,1);
 	    ReadOnly(1,&status);
 		return status;
 	}
@@ -213,11 +156,15 @@
 	uint8_t LidarLite::getConfig()
 	{
 		uint8_t config = 0;
-	    WriteBulk(reinterpret_cast<uint8_t*>(Commands::kACQ_CONFIG_REG),1);
+
+		unsigned char configRegister[1];
+
+		configRegister[0] = kACQ_CONFIG_REG;
+		WriteBulk(configRegister,1);
 		ReadOnly(1,(&config));
 		return config;
 	}
-	bool LidarLite::isMeasurementValid()
+	bool LidarLite::isMeasurementValid(bool healthy)
 	{
 		/**bit 6 set processor error
 		 * bit 5 clear health error
@@ -234,9 +181,14 @@
 		 * 0100000 AND it with 1101000 do clear bits we dont care about
 		 * If we get anything other than 010000 our measurement sucks
 		 */
+		uint8_t status = getStatus();
+		printf("stat %d\t",status);
+		printf("true? %d\n",(status & 0b1101000) == 0b0100000);
+		if(healthy)
+			return ((status & 0b1101000) == 0b0100000);
+		else
+			return ((status & 0b1001000) == 0b0000000);
 
-
-		return ((getStatus() & 0x1101000) == 0x0100000);
 	}
 	bool LidarLite::isBusy()
 	{

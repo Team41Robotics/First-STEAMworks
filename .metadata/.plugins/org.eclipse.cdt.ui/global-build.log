@@ -2671,3 +2671,1707 @@ Info: Nothing to build for 05_auton
 Info: Nothing to build for 06_LIDAR
 Info: Nothing to build for 07_Mecanum_drive_updated
 Info: Nothing to build for 08_LIDAR_ONLY
+13:57:41 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:00:03 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:00:32 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:00:59 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:03:02 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:86:63: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+     printf("dist: %f\n",(LidarMassData[0]<<8)+LidarMassData[1]);
+                                                               ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:04:21 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:06:40 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:09:49 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:11:30 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:12:05 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:12:50 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:13:24 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:14:15 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:15:23 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:16:45 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:19:27 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:21:29 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+..\src\LidarLite.cpp: In member function 'uint8_t LidarLite::getStatus()':
+..\src\LidarLite.cpp:144:24: warning: unknown conversion type character 'b' in format [-Wformat=]
+      printf("%b",status);
+                        ^
+..\src\LidarLite.cpp:144:24: warning: too many arguments for format [-Wformat-extra-args]
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:23:50 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+..\src\LidarLite.cpp: In member function 'uint8_t LidarLite::getStatus()':
+..\src\LidarLite.cpp:144:24: warning: unknown conversion type character 'b' in format [-Wformat=]
+      printf("%b",status);
+                        ^
+..\src\LidarLite.cpp:144:24: warning: too many arguments for format [-Wformat-extra-args]
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:25:08 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:25:41 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+..\src\LidarLite.cpp: In member function 'uint8_t LidarLite::getStatus()':
+..\src\LidarLite.cpp:144:24: warning: unknown conversion type character 'b' in format [-Wformat=]
+      printf("%b",status);
+                        ^
+..\src\LidarLite.cpp:144:24: warning: too many arguments for format [-Wformat-extra-args]
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:26:42 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:28:13 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:28:54 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:30:00 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:30:27 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:31:59 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:33:24 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:36:05 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:36:46 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:37:12 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+14:37:49 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+15:17:21 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+15:17:25 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+15:17:58 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+15:18:01 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+15:19:08 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+15:19:11 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+15:20:39 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+15:20:40 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+15:58:43 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+15:58:47 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+15:59:39 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+15:59:43 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:00:53 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:00:55 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:01:21 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:01:23 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:01:52 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:01:55 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:03:40 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:03:43 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:08:41 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:08:45 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:10:47 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+..\src\LidarLite.h: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\LidarLite.h:73:7: error: 'bool LidarLite::isMeasurementValid()' is private
+  bool isMeasurementValid();
+       ^
+..\src\Robot.cpp:63:32: error: within this context
+   if(lidar->isMeasurementValid())
+                                ^
+16:11:40 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:11:44 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:21:49 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:21:53 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:30:45 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:30:47 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:39:59 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:40:03 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:41:01 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:41:02 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:43:15 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:43:16 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:45:45 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:45:48 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:49:39 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:49:42 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+16:51:41 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+16:51:44 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+16:51:45 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:152:30: error: 'class LidarLite' has no member named 'getDistanceOtherEndianness'
+   printf("get dE: %d",lidar->getDistanceOtherEndianness());
+                              ^
+Info: Nothing to build for 07_Mecanum_drive_updated
+16:51:47 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+16:58:49 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:21:0:
+..\src\LidarLite.h: In member function 'virtual void Robot::RobotInit()':
+..\src\LidarLite.h:64:29: error: invalid use of non-static data member 'LidarLite::defaultaddress'
+  const int defaultaddress = 0x62;
+                             ^
+..\src\Robot.cpp:76:56: error: from this location
+   lidar = new LidarLite(I2C::Port::kOnboard,LidarLite::defaultaddress);
+                                                        ^
+17:00:33 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:00:37 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+17:00:39 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+..\src\LidarLite.h: In member function 'virtual void Robot::RobotInit()':
+..\src\LidarLite.h:64:29: error: invalid use of non-static data member 'LidarLite::defaultaddress'
+  const int defaultaddress = 0x62;
+                             ^
+..\src\Robot.cpp:23:56: error: from this location
+   lidar = new LidarLite(I2C::Port::kOnboard,LidarLite::defaultaddress);
+                                                        ^
+17:07:00 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+..\src\LidarLite.h: In member function 'virtual void Robot::RobotInit()':
+..\src\LidarLite.h:64:29: error: invalid use of non-static data member 'LidarLite::defaultaddress'
+  const int defaultaddress = 0x62;
+                             ^
+..\src\Robot.cpp:23:56: error: from this location
+   lidar = new LidarLite(I2C::Port::kOnboard,LidarLite::defaultaddress);
+                                                        ^
+17:07:42 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+..\src\LidarLite.h: In member function 'virtual void Robot::RobotInit()':
+..\src\LidarLite.h:67:29: error: 'const int LidarLite::defaultaddress' is private
+  const int defaultaddress = 0x62;
+                             ^
+..\src\Robot.cpp:23:56: error: within this context
+   lidar = new LidarLite(I2C::Port::kOnboard,LidarLite::defaultaddress);
+                                                        ^
+In file included from ..\src\Robot.cpp:9:0:
+..\src\LidarLite.h:67:29: error: invalid use of non-static data member 'LidarLite::defaultaddress'
+  const int defaultaddress = 0x62;
+                             ^
+..\src\Robot.cpp:23:56: error: from this location
+   lidar = new LidarLite(I2C::Port::kOnboard,LidarLite::defaultaddress);
+                                                        ^
+17:08:06 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:08:09 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+17:08:11 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:12:56 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:12:58 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:13:54 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:14:04 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+17:14:06 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+17:15:41 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:15:43 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:16:54 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:16:55 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:20:08 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:20:12 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:28:08 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:28:09 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:30:12 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:30:14 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:35:28 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:35:29 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+17:41:53 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\06_LIDAR\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/IMU.h:7:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:6:0:
+C:\Users\Robotics\workspace\06_LIDAR\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+17:41:56 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp:205:37: error: redeclaration of 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+..\src\Robot.cpp:204:37: note: previous declaration 'const string Robot::autoNameCustom'
+  const std::string autoNameCustom = "My Auto";
+                                     ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+17:41:58 **** Incremental Build of configuration Debug for project 08_LIDAR_ONLY ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\08_LIDAR_ONLY\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\LidarLite.o" "src\\Robot.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+18:07:32 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+18:07:33 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Driving.o" "..\\src\\Driving.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.cpp:10:0:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousPeriodic()':
+..\src\Robot.cpp:63:23: error: 'autoNameCustom' was not declared in this scope
+   if (autoSelected == autoNameCustom) {
+                       ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+18:10:10 **** Incremental Build of configuration Debug for project 06_LIDAR ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+18:10:15 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
+..\src\Robot.cpp:38:3: error: 'imu' was not declared in this scope
+   imu = new IMU();
+   ^
+..\src\Robot.cpp:38:13: error: expected type-specifier before 'IMU'
+   imu = new IMU();
+             ^
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousInit()':
+..\src\Robot.cpp:58:3: error: 'imu' was not declared in this scope
+   imu->Reset(nav);
+   ^
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousPeriodic()':
+..\src\Robot.cpp:63:23: error: 'autoNameCustom' was not declared in this scope
+   if (autoSelected == autoNameCustom) {
+                       ^
+..\src\Robot.cpp:64:4: error: 'imu' was not declared in this scope
+    imu->Localization(nav);
+    ^
+..\src\Robot.cpp:132:4: error: 'imu' was not declared in this scope
+    imu->Localization(nav);
+    ^
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:151:3: error: 'imu' was not declared in this scope
+   imu->Localization(nav);
+   ^
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY
+19:27:53 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from C:\Users\Robotics\workspace\05_auton\src/Driving.h:12:0,
+                 from ..\src\Robot.cpp:9:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:65:7: error: extra qualification 'Driving::' on member 'Pid_Move' [-fpermissive]
+  bool Driving::Pid_Move (double Dist);
+       ^
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:66:7: error: extra qualification 'Driving::' on member 'NOPID_Move' [-fpermissive]
+  bool Driving::NOPID_Move (int Dist,int Speed);
+       ^
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:67:7: error: extra qualification 'Driving::' on member 'Auto_Foward' [-fpermissive]
+  void Driving::Auto_Foward (double speed);
+       ^
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousPeriodic()':
+..\src\Robot.cpp:80:34: error: cannot convert 'Driving::NOPID_Move' from type 'bool (Driving::)(int, int)' to type 'bool'
+     if(motion_control->NOPID_Move)
+                                  ^
+19:28:09 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from C:\Users\Robotics\workspace\05_auton\src/Driving.h:12:0,
+                 from ..\src\Robot.cpp:9:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:65:7: error: extra qualification 'Driving::' on member 'Pid_Move' [-fpermissive]
+  bool Driving::Pid_Move (double Dist);
+       ^
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:66:7: error: extra qualification 'Driving::' on member 'NOPID_Move' [-fpermissive]
+  bool Driving::NOPID_Move (int Dist,int Speed);
+       ^
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:67:7: error: extra qualification 'Driving::' on member 'Auto_Foward' [-fpermissive]
+  void Driving::Auto_Foward (double speed);
+       ^
+19:29:13 **** Incremental Build of configuration Debug for project 05_auton ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\IMU.o" "..\\src\\IMU.cpp" 
+..\src\IMU.cpp: In constructor 'IMU::IMU()':
+..\src\IMU.cpp:17:9: warning: unused variable 'accel_x' [-Wunused-variable]
+  double accel_x = 0;
+         ^
+..\src\IMU.cpp:18:9: warning: unused variable 'accel_y' [-Wunused-variable]
+  double accel_y = 0;
+         ^
+..\src\IMU.cpp:19:9: warning: unused variable 'velocity_x' [-Wunused-variable]
+  double velocity_x = 0;
+         ^
+..\src\IMU.cpp:20:9: warning: unused variable 'velocity_y' [-Wunused-variable]
+  double velocity_y = 0;
+         ^
+..\src\IMU.cpp:21:9: warning: unused variable 'position_x' [-Wunused-variable]
+  double position_x = 0;
+         ^
+..\src\IMU.cpp:22:9: warning: unused variable 'position_y' [-Wunused-variable]
+  double position_y = 0;
+         ^
+..\src\IMU.cpp: In member function 'void IMU::positionFilter(double, double, double, double)':
+..\src\IMU.cpp:33:12: warning: unused variable 'a' [-Wunused-variable]
+     double a = tau/(tau+del_t);
+            ^
+..\src\IMU.cpp: In member function 'double IMU::complementaryIMU(double, double, int)':
+..\src\IMU.cpp:39:9: warning: unused variable 'dtC' [-Wunused-variable]
+  double dtC = loop/1000.0;
+         ^
+..\src\IMU.cpp: In member function 'double IMU::modulo(double, double)':
+..\src\IMU.cpp:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\IMU.cpp: In member function 'double IMU::complementaryIMU(double, double, int)':
+..\src\IMU.cpp:41:26: warning: 'angle' is used uninitialized in this function [-Wuninitialized]
+  double angle = a* (angle+ gyroAngle) + (1-a) * accel_x;
+                          ^
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\LidarLite.o" "..\\src\\LidarLite.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from C:\Users\Robotics\workspace\05_auton\src/Driving.h:12:0,
+                 from ..\src\Robot.cpp:9:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Robot.cpp:9:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Robotics/wpilib/cpp/current/include" "-IC:\\Users\\Robotics\\workspace\\05_auton\\src" "-IC:\\Users\\Robotics/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Driving.o" "..\\src\\Driving.cpp" 
+In file included from C:\Users\Robotics\workspace\05_auton\src/Driving.h:12:0,
+                 from ..\src\Driving.cpp:3:
+C:\Users\Robotics\workspace\05_auton\src/IMU.h:8:0: warning: "RAD" redefined
+ #define RAD 3.14159 / 180.0
+ ^
+In file included from ..\src\Driving.cpp:3:0:
+C:\Users\Robotics\workspace\05_auton\src/Driving.h:10:0: note: this is the location of the previous definition
+ #define RAD 3.14159265359 / 180.0
+ ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Robotics/wpilib/cpp/current/lib" "-LC:\\Users\\Robotics/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Driving.o" "src\\IMU.o" "src\\LidarLite.o" "src\\Robot.o" "src\\Shooter.o" -lCTRLib -lnavx_frc_cpp -lwpi 
+Info: Nothing to build for -01_Prototyping_board
+Info: Nothing to build for 00_Mecanum_drive
+Info: Nothing to build for 01_Mecanum_direction_invariant
+Info: Nothing to build for 02_Mecanum_direction_invariant3
+Info: Nothing to build for 03_NetworkTableTest
+Info: Nothing to build for 04_mecanum_invariant
+Info: Nothing to build for 05_auton
+Info: Nothing to build for 06_LIDAR
+Info: Nothing to build for 07_Mecanum_drive_updated
+Info: Nothing to build for 08_LIDAR_ONLY

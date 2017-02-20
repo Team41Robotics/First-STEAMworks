@@ -3,7 +3,6 @@
 #include <Driving.h>
 #include <math.h>
 
-
 Driving::Driving ()
 {
 	M_fr = new CANTalon(9);
@@ -14,6 +13,11 @@ Driving::Driving ()
     throt_min = .13;
     throt_rng = 0.87;
     direction_angle = 0;
+	nav = new AHRS(I2C::Port::kOnboard);
+	nav->Reset();
+	imu = new IMU();
+	imu->Reset(nav);
+	lidar = new LidarLite(I2C::Port::kOnboard,0X62);
 }
 
 double Driving::absD (double a) //this may need to be put in a new class. I assumed “Aux_functions”. Only if it is used in other classes.
@@ -55,12 +59,6 @@ void Driving::Mecanum_drive(Joystick *control_joy){
 	double forward = -1*(control_joy -> GetY());
 	double right = control_joy ->GetX();
 	double clockwise = control_joy -> GetZ();
-
-
-
-//	double temp = forward*cos(gyro->GetAngle()) - right*sin(gyro->GetAngle());
-//	right = forward*sin(theta) + right*cos(theta);
-//	forward = temp;
 
 	double front_left = forward + clockwise + right;
 	double front_right = forward - clockwise - right;
@@ -153,4 +151,43 @@ void Driving::Auto_Move ( double fr , double fl , double br , double bl )
     M_fl->Set( -fl );
     M_br->Set( br  );
     M_bl->Set( -bl );
+}
+
+void Driving::Auto_Foward (double speed){
+	Auto_Move(speed,speed,speed,speed);
+}
+
+int Driving::LidarDist(){
+	lidar->reset();
+	int distance;
+	if(lidar->isMeasurementValid(false)){
+		distance = lidar->getDistance();
+		SmartDashboard::PutNumber("lidar",distance);
+		return distance;
+	}
+	else {
+		printf("INVALID DISTANCE");
+		return -1;
+	}
+}
+
+
+bool Driving::NOPID_Move (int Dist,int Speed)
+{
+	imu->Localization(nav);
+	int lidDist = LidarDist();
+	int moveDistance = lidDist*0.9 + imu->position_y*0.1;
+	if(moveDistance > Dist){
+		Auto_Foward(0.9);
+		return true;
+	}
+	else{
+		Auto_Foward(0.0);
+		return false;
+	}
+}
+
+bool Driving::Pid_Move_upTo (double distance)
+{
+
 }

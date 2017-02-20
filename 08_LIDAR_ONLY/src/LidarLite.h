@@ -8,6 +8,7 @@
 #include <set>
 #include <string>
 #include <thread>
+#define LIDARADDRESS 0X62
 
 class LidarLite: frc::I2C
 {
@@ -44,7 +45,8 @@ public:
 		kCORR_DATA		  = 0x52, //R Correlation record data low byte
 		kCORR_DATA_SIGN   = 0x53, //R Correlation record data high byte
 		kACQ_SETTINGS 	  = 0x5d, //R/W Correlation record memory bank select
-		kPOWER_CONTROL 	  = 0x65	 //R/W Power state control 0x80
+		kPOWER_CONTROL 	  = 0x65, //R/W Power state control 0x80
+		kDIST_HIGHLOW 	  = 0x8F  //R register to read high and low byte of distance
 	};
 	enum DistanceUnit { kInches = 0, kMilliMeters = 1 };
 	LidarLite(I2C::Port port, int deviceaddress);
@@ -53,24 +55,22 @@ public:
 	void SetFreeRun(bool enable);
 	void reset();
 	uint16_t getDistance();
-	uint16_t getDistanceOtherEndianness();
 	double getVelocity();
 	void configure(int configuration);
 	void setUpdateDelay(uint8_t delay);
 	bool isBusy();
 	uint8_t getConfig();
 	uint8_t getStatus();
-
+	bool isMeasurementValid(bool healthy);
 
 private:
+	const int defaultaddress = 0x62;
 	bool m_enabled = false;
 	bool m_freerun = false;
 	bool m_biascorrectionenable = false;
 	int measuredelay = 0x14;
-	const int defaultaddress = 0x62;
-
+	void getMeasurement();
 	void setConfig(uint8_t config);
-	bool isMeasurementValid();
 	void initialize();
 	void measurementRepeat(uint8_t count);
 

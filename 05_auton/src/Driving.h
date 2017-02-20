@@ -8,6 +8,10 @@
 #define K_aim_d 0
 #define MAX_AIM_ACCUM 1
 #define RAD 3.14159265359 / 180.0
+#include <LidarLite.h>
+#include <IMU.h>
+#include <I2C.h>
+
 class Driving
 {
 private:
@@ -43,19 +47,26 @@ private:
 	double aim_error_accum;
 	double aim_error_old;
 	double aim_out;
-	ADXRS450_Gyro *gyro;
-
+	LidarLite *lidar;
+	AHRS *nav;
+	IMU *imu;
 	double max(double a, double b);
 	double absD(double a);
 
 public:
 
 	Driving();
+	int LidarDist();
 	void Auto_aim(double cmxn);
 	void Move(double fr, double fl, double br, double bl);
 	void Mecanum_drive(Joystick *control_joy);
 	void Manual_driving(Joystick *control_joy);
 	void Auto_Move ( double fr , double fl , double br , double bl );
+	bool Pid_Move_upTo (double Dist);
+	bool Pid_Move_downTo (double Dist);
+
+	bool NOPID_Move (int Dist,int Speed);
+	void Auto_Foward (double speed);
 };
 
 
