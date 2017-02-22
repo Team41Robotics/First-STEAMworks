@@ -19,12 +19,14 @@ public:
 
 	double time = 0.0;
 	int auton_step = 0;
+	bool stopped;
 
 
 	void RobotInit() {
 		chooser.AddDefault(left, left);
 		chooser.AddObject(middle, middle);
 		chooser.AddObject(right, right);
+		chooser.AddObject(test, test);
 		frc::SmartDashboard::PutData("Auto Modes", &chooser);
 
 		color.AddDefault(blue, blue);
@@ -37,14 +39,14 @@ public:
 		control_0 = new Joystick(0);
 		timer = new Timer();
 		timer->Start();
-
+		stopped = false;
 	}
 
 	void AutonomousInit() override {
 		autoSelected = chooser.GetSelected();
 		std::cout << "Auto selected: " << autoSelected << std::endl;
 
-		if (colorSelected == blue) {
+		if (colorSelected == left) {
 			SmartDashboard::PutString("Auton","left");
 		}
 		else if (autoSelected == middle) {
@@ -68,42 +70,166 @@ public:
 		timer->Reset();
 		timer->Start();
 		auton_step = 0;
+		motion_control->imu->Reset(motion_control->nav);
 	}
 	void AutonomousPeriodic() {
 		time = timer->Get();
-		if (autoSelected == left) {
+		motion_control->imu->Localization(motion_control->nav);
 
+		if(autoSelected == test)
+		{
 			if(auton_step == 0)
 			{
-/*				motion_control->Auto_Move(-0.5,-0.5,-0.5,-0.5);
-				if(imu->position_y < 135.4)*/
-				//if(motion_control->NOPID_Move)
-			//		auton_step = 1;
-			if(motion_control->Pid_Move_Upto(135.4))
-				auton_step = 1;
-
+				if(motion_control->NOPID_Move(114.5,0.3))
+					auton_step = 1;
 			}
 			else if(auton_step == 1)
 			{
-/*				imu->ResetPos();
-				motion_control->Auto_Move(+0.25,-0.25,+0.25,-0.25);
-				if(imu->theta < 90)*/
+				if(motion_control->NOPID_Turn(-120.0,0.2)){
 					auton_step = 2;
-				//TURN FUNC
+					motion_control->imu->Reset(motion_control->nav);
+					Wait(2);
+				}
 			}
 			else if(auton_step == 2)
 			{
-/*				motion_control->Auto_Move(-0.50,-0.50,-0.50,-0.50);
-				if(imu->position_y <  0.0)*/
+				if(motion_control->NOPID_Turn(120.0,0.2)){
 					auton_step = 3;
+					motion_control->imu->Reset(motion_control->nav);
+				}
+			}
+			else if(auton_step == 3)
+			{
+				if(motion_control->NOPID_Move(32.0,-0.2,false))
+					auton_step = 4;
 			}
 			else
 			{
-				motion_control->Auto_Move(0,0,0,0);
+				motion_control->Auto_Stop();
 			}
+		}
+		else if(colorSelected == red)
+		{
+			if(autoSelected == right)
+			{
+				if(auton_step == 0)
+				{
+					if(motion_control->Pid_Move_upTo(114.5))
+						auton_step = 1;
+				}
+				else if(auton_step == 1)
+				{
+					if(motion_control->Pid_turn_downTo(-120.0))
+						auton_step = 2;
+				}
+				else if(auton_step == 2)
+				{
+					if(motion_control->Pid_Move_downTo(10.0))
+						auton_step = 3;
+				}
+				else
+				{
+					motion_control->Auto_Stop();
+				}
+			}
+			else if (autoSelected == middle)
+			{
+				if(auton_step == 0)
+				{
+					if(motion_control->Pid_Move_downTo(10.0))
+						auton_step = 1;
+				}
+				else if(auton_step ==1)
+				{
+					motion_control->Auto_Stop();
+				}
+			}
+			else if (autoSelected == left)
+			{
+				if(auton_step == 0)
+				{
+					if(motion_control->Pid_Move_upTo(114.5))
+						auton_step = 1;
+				}
+				else if(auton_step == 1)
+				{
+					if(motion_control->Pid_turn_upTo(120.0))
+						auton_step = 2;
+				}
+				else if(auton_step == 2)
+				{
+					if(motion_control->Pid_Move_downTo(10.0))
+						auton_step = 3;
+				}
+				else
+				{
+					motion_control->Auto_Stop();
+				}
+			}
+		}
+		else if (colorSelected == blue)
+		{
+			if(autoSelected == right)
+			{
+				if(auton_step == 0)
+				{
+					if(motion_control->Pid_Move_upTo(114.5))
+						auton_step = 1;
+				}
+				else if(auton_step == 1)
+				{
+					if(motion_control->Pid_turn_upTo(120.0))
+						auton_step = 2;
+				}
+				else if(auton_step == 2)
+				{
+					if(motion_control->Pid_Move_downTo(10.0))
+						auton_step = 3;
+				}
+				else
+				{
+					motion_control->Auto_Stop();
+				}
+			}
+			else if (autoSelected == middle)
+			{
+				if(auton_step == 0)
+				{
+					if(motion_control->Pid_Move_downTo(10.0))
+						auton_step = 1;
+				}
+				else if(auton_step ==1)
+				{
+					motion_control->Auto_Stop();
+				}
+			}
+			else if (autoSelected == left)
+			{
+				if(auton_step == 0)
+				{
+					if(motion_control->NOPID_Move(114.5,0.3))
+						auton_step = 1;
+				}
+				else if(auton_step == 1)
+				{
+					if(motion_control->NOPID_Turn(-120.0,0.3))
+						auton_step = 2;
+				}
+				else if(auton_step == 2)
+				{
+					if(motion_control->NOPID_Move(20.0,-0.3,false))
+						auton_step = 3;
+				}
+				else
+				{
+					motion_control->Auto_Stop();
+				}
+			}
+		}
 
 
-		}/* else {
+
+	/* else {
 			time = timer->Get();
 			imu->Localization(nav);
 			SmartDashboard::PutNumber("distance",imu->position_y);
@@ -112,17 +238,54 @@ public:
 
 				motion_control->Auto_Move(-0.5,-0.5,-0.5,-0.5);
 			}
-		}*/
+		}*///IN REFERNCE TO THIS TAPE...
 	}
 
 	void TeleopInit() {
-
+		motion_control->imu->Reset(motion_control->nav);
+		auton_step = 0;
 	}
 
 	void TeleopPeriodic() {
-/*		motion_control->Manual_driving(control_0);
+		motion_control->Manual_driving(control_0);
+		motion_control->imu->Localization(motion_control->nav);
 
+		printf("ang %f \n",motion_control->imu->theta);
+/*		motion_control->imu->Localization(motion_control->nav);
+		if(auton_step == 0)
+		{
+			if(motion_control->NOPID_Move(90.0,0.3))
+				auton_step = 1;
+		}
+		else if(auton_step == 1)
+		{
 
+			if(motion_control->NOPID_Turn(-120.0,0.4))
+				auton_step = 2;
+		}*/
+/*		motion_control->imu->Localization(motion_control->nav);
+		//motion_control->Manual_driving(control_0);
+		SmartDashboard::PutNumber("smaller lazer-y prateek. ",motion_control->LidarDist());
+		SmartDashboard::PutNumber("smaller gyro-y prateek. ", motion_control->imu->theta);
+		SmartDashboard::PutNumber("Smaller displacement-y prateek",motion_control->nav->GetDisplacementY()*100);
+		if(control_0->GetRawButton(12))
+			motion_control->imu->Reset(motion_control->nav);
+
+		SmartDashboard::PutNumber("vel Y",motion_control->nav->GetVelocityY());
+
+		printf("vel pos: %f\n",motion_control->imu->position_y*100/2.54);
+		if(!stopped){
+			if(fabs(motion_control->imu->position_y*100/2.54) < 30.0){
+				motion_control->Auto_Foward(1);
+				stopped = true;
+			}
+			else
+				motion_control->Auto_Foward(0.0);
+		}
+		//		if(motion_control->nav->GetVelocityY()*timer->Get())
+
+		//printf("a shirt but slightly smaller %f\n",motion_control->imu->theta);
+/*
 
 		imu->Localization(nav);
 
@@ -162,6 +325,8 @@ private:
 	const std::string left = "Left";
 	const std::string middle = "Middle";
 	const std::string right = "Right";
+	const std::string test = "Test";
+
 
 
 	frc::SendableChooser<std::string> color;

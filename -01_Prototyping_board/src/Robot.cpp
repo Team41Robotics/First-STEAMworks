@@ -82,7 +82,7 @@ public:
 //		lidar = new PWM(0);
 //		lidarTrigger = new DigitalOutput(1);
 //		lidarTrigger->Set(false);
-		testMotor = new CANTalon(10);
+		testMotor = new CANTalon(1);
 	}
 
 	void TeleopPeriodic()
@@ -91,7 +91,7 @@ public:
 		//lidar->GetRaw()
 //		testMotor->Set(control_0->GetRawAxis(1));
 	//	led->SetVoltage(5.0);
-		getPotAngle();
+//		getPotAngle();
 //		getPotAngle();
 		//shooterM1->Set(-((-control_0->GetRawAxis(3)+1.0)/2.0));
 		//shooterM2->Set(((-control_0->GetRawAxis(3)+1.0)/2.0));
@@ -99,14 +99,14 @@ public:
 		//0 trig
 		//SmartDashboard::PutNumber("period",test_boy->GetPeriod());
 
-		printf("period %f\n",test_boy->GetPeriod());
+//		printf("period %f\n",test_boy->GetPeriod());
 
 		//printf("input %f\n", 2.0*acos(control_0->GetRawAxis(1))/PI-1.0 );
 		//printf("input %f : real %f\n", pow(-control_0->GetRawAxis(1),2.2) ,-control_0->GetRawAxis(1));
 //		double pot_theta = pot -> Get();
 	//	printf("Pot: %f\n", pot_theta);
 
-
+		testMotor->Set(0.8);
 //john->Set(1.0);
 	//	barrel->Set(-control_0->GetRawAxis(1));
 	/*

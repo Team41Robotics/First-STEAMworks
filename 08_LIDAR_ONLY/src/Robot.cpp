@@ -63,7 +63,7 @@ public:
 		lidar->reset();
 		if(lidar->isMeasurementValid(false))
 //			SmartDashboard::PutNumber("lidar",lidar->getDistance()/2.54);
-			printf("dist %d\n",lidar->getDistance());
+			printf("dist %f\n",lidar->getDistance()/2.54);
 		else
 			printf("INVALID MEASUREMENT %d\n",lidar->getDistance());
 

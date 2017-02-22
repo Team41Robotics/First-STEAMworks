@@ -13,6 +13,7 @@
 #include <opencv2/core/core.hpp>
 #include <CameraServer.h>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <AHRS.h>
 
 class Robot: public frc::IterativeRobot {
 public:
@@ -20,26 +21,27 @@ public:
 	Joystick *control_0;
 	Joystick *control_1;
 
-	AnalogInput *pot;
+	//AnalogInput *pot;
 	CANTalon *shooterM1;
 	CANTalon *shooterM2;
 	FILE *shooterData;
 	CANTalon *barrel;
 	CANTalon *shooterIntake;
 	CANTalon *intake;
-	BuiltInAccelerometer *accel_0;
+
 //	ADXL345_I2C *accel_1;
 	//SPI *test;
 //	ADXRS450_Gyro *test;
-	NetworkTable *table;
+//	NetworkTable *table;
+	AHRS *nav;
 
 	Timer *timer;
 
 	bool intakeShooterSet;
 	double getPotAngle()
 	{
-		double read = pot->GetVoltage();
-		return (read/4.813)*300.0;
+	//	double read = pot->GetVoltage();
+		//return (read/4.813)*300.0;
 	}
 /*
 	double getPotAngle()
@@ -64,10 +66,11 @@ public:
 		test = new ADXRS450_Gyro(frc::SPI::Port::kOnboardCS0);//make sure gyro has a jumper between desired port and channel
 		test->Calibrate();
 		test->Reset();*/
-		table->GetTable("localhost");
+		//table->GetTable("localhost");
 
+		nav = new AHRS(I2C::Port::kOnboard);
 
-		pot = new AnalogInput(2);
+		//pot = new AnalogInput(2);
 		intakeShooterSet = false;
 		timer = new Timer();
 		timer->Reset();
@@ -120,6 +123,7 @@ public:
 		if (control_1->GetRawButton(4)){
 			fprintf(shooterData, "%d\t%d\n", shooterM1->Get(), getPotAngle());
 		}
+
 	}
 
 	void TestPeriodic() {

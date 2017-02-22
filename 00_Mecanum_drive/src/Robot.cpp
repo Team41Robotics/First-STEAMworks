@@ -24,6 +24,8 @@ public:
 	CANTalon *barrel;
 	CANTalon *shooterIntake;
 	CANTalon *intake;
+	CANTalon *climber;
+
 	BuiltInAccelerometer *accel_0;
 //	ADXL345_I2C *accel_1;
 	//SPI *test;
@@ -70,6 +72,8 @@ public:
 		shooterIntake = new CANTalon(1);
 
 		intake = new CANTalon(10);
+
+		climber = new CANTalon(2);
 
 		table->GetTable("localhost");
 
@@ -135,8 +139,15 @@ public:
 			shooterM1->Set(0);
 			shooterM2->Set(0);
 			shooterIntake->Set(0);
+			intakeShooterSet = false;
 		}
 		barrel->Set(control_1->GetRawAxis(1));
+
+/*
+		shooterM1->Set(0.7);
+		shooterM2->Set(-0.7);
+*/
+
 
 		motion_control->Manual_driving(control_0);
 
@@ -151,10 +162,20 @@ public:
 			intake->Set(0);
 		}
 
+		if(control_0->GetRawButton(5))
+			climber->Set(-1);
+		else
+			climber->Set(0);
+
+		if(control_1->GetRawButton(12))
+			climber->Set(1);
+		else
+			climber->Set(0);
+
 		if(control_1->GetRawButton(6))
 		{
-			shooterIntake_Aux_Left->Set(-0.9);
-			shooterIntake_Aux_Right->Set(0.7);
+			shooterIntake_Aux_Left->Set(1);
+			shooterIntake_Aux_Right->Set(-1);
 		}
 		else
 		{
